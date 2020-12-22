@@ -1,0 +1,42 @@
+[user]
+	name = Dai
+	email = daig@users.noreply.github.com
+[core]
+	editor = vim
+[alias]
+	c = commit
+	b = branch
+	s = status
+        g = log --graph --pretty=oneline --oneline --abbrev-commit --decorate
+        ga = log --graph --pretty=oneline --oneline --abbrev-commit --decorate --all
+        s = status
+        d = diff
+        dc = diff --cached
+        cb = checkout -b
+        b = branch
+        c = commit
+        cm = commit --message
+        ca = commit --amend
+        can = commit --amend --no-edit
+        a = add
+        au = add -u
+        ai = add -i
+        m = merge --no-ff
+        f = merge --ff-only
+        rbo = rebase --onto
+        rbc = cherry-pick
+        push = push
+        p = pull
+        pm = pull origin master
+        ff = pull --ff-only origin
+        cgname = config --global user.name
+        cname = config user.name
+        cgemail = config --global user.email
+        cemail = config user.email
+        r = reset
+        rh = reset --hard
+        ra = remote add
+        rb = rebase
+        rhr = reset --hard && git submodule foreach --recursive git reset --hard
+        pr = pull --recurse-submodule
+        ls = ls-files

@@ -16,7 +16,7 @@ set expandtab
 set incsearch
 set mouse=a
 set history=1000
-set clipboard=unnamedplus,autoselect
+set clipboard=unnamed,autoselect
 
 set completeopt=menuone,menu,longest
 
