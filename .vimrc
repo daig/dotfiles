@@ -1,5 +1,3 @@
-syntax on
-filetype plugin indent on
 
 set nocompatible
 set number
@@ -35,11 +33,25 @@ vmap a= :Tabularize /=<CR>
 vmap a; :Tabularize /::<CR>
 vmap a- :Tabularize /-><CR>
 
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:idris_conceal = 1
+
 map <silent> <Leader>t :CtrlP()<CR>
 noremap <leader>b<space> :CtrlPBuffer<cr>
 let g:ctrlp_custom_ignore = '\v[\/]dist$'
 
 execute pathogen#infect()
+syntax on
+filetype on
+filetype plugin indent on
 
 autocmd BufWritePost package.yaml call Hpack()
 

@@ -7,6 +7,7 @@
 
 (exec-path-from-shell-initialize)
 
+
 ;; Download Evil
 (unless (package-installed-p 'evil)
   (package-install 'evil))
@@ -29,3 +30,6 @@
 
 (load-file (let ((coding-system-for-read 'utf-8))
                 (shell-command-to-string "agda-mode locate")))
+(define-key global-map (kbd "C-c C-u") 'agda2-goto-definition-keyboard)
+
+(add-to-list 'auto-mode-alist '("\\.lagda.md\\'" . agda2-mode))
