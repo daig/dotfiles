@@ -1,6 +1,7 @@
 
 set nocompatible
 set number
+set ruler
 set nowrap
 set showmode
 set tw=80
