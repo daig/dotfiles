@@ -23,22 +23,7 @@
  '(custom-safe-themes
    '("d9646b131c4aa37f01f909fbdd5a9099389518eb68f25277ed19ba99adeb7279" "5846b39f2171d620c45ee31409350c1ccaddebd3f88ac19894ae15db9ef23035" "2dff5f0b44a9e6c8644b2159414af72261e38686072e063aa66ee98a2faecf0e" default))
  '(package-selected-packages
-   '(monokai-theme monokai-pro-theme dracula-theme exec-path-from-shell evil)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
-
-(load-file (let ((coding-system-for-read 'utf-8))
-                (shell-command-to-string "agda-mode locate")))
-(define-key global-map (kbd "C-c C-u") 'agda2-goto-definition-keyboard)
-
-(add-to-list 'auto-mode-alist '("\\.lagda.md\\'" . agda2-mode))
-
-(load-theme 'monokai-pro)
-
+   '(auctex monokai-theme monokai-pro-theme dracula-theme exec-path-from-shell evil)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -55,3 +40,13 @@
  '(agda2-highlight-primitive-face ((t (:foreground "#CE4045"))))
  '(agda2-highlight-primitive-type-face ((t (:foreground "#E6DB74"))))
  '(font-lock-comment-face ((t (:foreground "#75715E")))))
+
+(load-file (let ((coding-system-for-read 'utf-8))
+                (shell-command-to-string "agda-mode locate")))
+(define-key global-map (kbd "C-c C-u") 'agda2-goto-definition-keyboard)
+
+(add-to-list 'auto-mode-alist '("\\.lagda.md\\'" . agda2-mode))
+
+(load-theme 'monokai-pro)
+
+
