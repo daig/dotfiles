@@ -142,4 +142,6 @@ alias ga='git add'
 alias gau='git add -u'
 alias gai='git add -i'
 
+alias e="emacsclient -c -nw --alternate-editor=\"\""
+
 setxkbmap -option compose:ralt
