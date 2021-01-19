@@ -141,3 +141,5 @@ alias gcan='git commit --amend --no-edit'
 alias ga='git add'
 alias gau='git add -u'
 alias gai='git add -i'
+
+setxkbmap -option compose:ralt
