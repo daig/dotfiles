@@ -1,0 +1,4 @@
+:set editor vim
+:set -XMagicHash
+:set -XUnboxedTuples
+:set -XUnboxedSums
