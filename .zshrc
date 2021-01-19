@@ -146,3 +146,4 @@ alias e="emacsclient -c -nw --alternate-editor=\"\""
 
 setxkbmap -option compose:ralt
 setxkbmap -option caps:escape
+xsetroot -solid "#000000"
