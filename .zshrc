@@ -10,7 +10,7 @@ ZSH_DISABLE_COMPFIX=true
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/dai/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -128,3 +128,16 @@ alias l='k'
 alias b='popd'
 alias c='pushd'
 alias t='fd | as-tree'
+
+unalias gc
+gc(){ git clone git@github.com:$1 }
+alias gs='git status'
+alias gg='git log --graph --pretty=oneline --oneline --abbrev-commit --decorate'
+alias gga='git log --graph --pretty=oneline --oneline --abbrev-commit --decorate --all'
+alias gd='git diff'
+alias gcm='git commit --message'
+alias gca='git commit --amend'
+alias gcan='git commit --amend --no-edit'
+alias ga='git add'
+alias gau='git add -u'
+alias gai='git add -i'

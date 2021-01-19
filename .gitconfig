@@ -4,7 +4,6 @@
 [core]
 	editor = vim
 [alias]
-	c = commit
 	b = branch
 	s = status
         g = log --graph --pretty=oneline --oneline --abbrev-commit --decorate
