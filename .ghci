@@ -3,3 +3,6 @@
 :set -XMagicHash
 :set -XUnboxedTuples
 :set -XUnboxedSums
+:set -XLinearTypes
+:set -XRankNTypes
+:set -XUnicodeSyntax
