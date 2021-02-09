@@ -9,3 +9,8 @@
 :set -XLambdaCase
 :set -XEmptyCase
 :set -XBlockArguments
+:set -XTypeOperators
+:set -XScopedTypeVariables
+:set -XTypeApplications
+:set -XAllowAmbiguousTypes
+:set -XPostfixOperators
