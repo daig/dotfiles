@@ -3,6 +3,7 @@
 	email = daig@users.noreply.github.com
 [core]
 	editor = vim
+	excludesfile = ~/.gitignore
 [alias]
 	b = branch
 	s = status
